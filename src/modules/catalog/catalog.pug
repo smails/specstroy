@@ -1,0 +1,131 @@
+mixin catalog(vars)
+  +b.content
+    +e.inner.inner
+      +e.contain
+        +e.H2.title
+          span Профессиональная покраска
+          br
+          | на производстве
+        +e.subtitle Какие технологии покраски мы используем:
+        +e.list
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/images/catalog-1.png' alt='')
+            +e.P.caption Стандартная лессирующая покраска
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/images/catalog-2.png' alt='')
+            +e.P.caption Воск
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/images/catalog-3.png' alt='')
+            +e.P.caption Укрывистая покраска
+      +e.contain_border
+        +e.H2.title Цены на работы с 
+          span учетом ЛКМ
+        +e.table
+          +e.head
+            +e.col
+              +e.B.txt №
+            +e.col
+              +e.B.txt Материал
+            +e.col
+              +e.B.txt Схема: 1 грунт + 
+                span 1 слой 
+                | с 3-х сторон
+            +e.col
+              +e.B.txt Схема: 1 грунт + 
+                span 2 слоя 
+                | с 3-х сторон
+            +e.col
+          +e.body
+            +e.row
+              +e.col
+                +e.P.val 1.
+              +e.col(data-title="Материал")
+                +e.P.val VGT (Лак пропиточный)
+              +e.col(data-title="Схема: 1 грунт +  1 слой с 3-х сторон")
+                +e.P.price
+                  span 650 
+                  | руб/м2
+              +e.col(data-title="Схема: 1 грунт +  2 слой с 3-х сторон")
+                +e.P.price
+                  span 750 
+                  | руб/м2
+              +e.col
+                +e.A.btn.btn.js-open-modal(href="#callback") Заказать
+            +e.row
+              +e.col
+                +e.P.val 2.
+              +e.col(data-title="Материал")
+                +e.P.val Tikkurila (Индустриальный состав)
+              +e.col(data-title="Схема: 1 грунт + 1 слой с 3-х сторон")
+                +e.P.price
+                  span 650 
+                  | руб/м2
+              +e.col(data-title="Схема: 1 грунт +  2 слой с 3-х сторон")
+                +e.P.price
+                  span 750 
+                  | руб/м2
+              +e.col
+                +e.A.btn.btn.js-open-modal(href="#callback") Заказать
+            +e.row
+              +e.col
+                +e.P.val 2.
+              +e.col(data-title="Материал")
+                +e.P.val Tikkurila (Индустриальный состав)
+              +e.col(data-title="Схема: 1 грунт +  1 слой с 3-х сторон")
+                +e.P.price
+                  span 650 
+                  | руб/м2
+              +e.col(data-title="Схема: 1 грунт +  2 слой с 3-х сторон")
+                +e.P.price
+                  span 750 
+                  | руб/м2
+              +e.col
+                +e.A.btn.btn.js-open-modal(href="#callback") Заказать
+        +e.H2.title Цены 
+          span без учета стоимости ЛКМ
+        +e.table
+          +e.head
+            +e.col
+              +e.B.txt №
+            +e.col
+              +e.B.txt Услуга
+            +e.col
+              +e.B.txt Стоимость
+            +e.col
+          +e.body
+            +e.row
+              +e.col
+                +e.P.val 1.
+              +e.col(data-title="Услуга")
+                +e.P.val Шлифование
+              +e.col(data-title="Стоимость")
+                +e.P.price
+                  span 650 
+                  | руб/м2
+              +e.col
+                +e.A.btn.btn.js-open-modal(href="#callback") Заказать
+            +e.row
+              +e.col
+                +e.P.val 2.
+              +e.col(data-title="Услуга")
+                +e.P.val Текстурирование
+              +e.col(data-title="Стоимость")
+                +e.P.price
+                  span 650 
+                  | руб/м2
+              +e.col
+                +e.A.btn.btn.js-open-modal(href="#callback") Заказать
+            +e.row
+              +e.col
+                +e.P.val 2.
+              +e.col(data-title="Услуга")
+                +e.P.val Браширование
+              +e.col(data-title="Стоимость")
+                +e.P.price
+                  span 650 
+                  | руб/м2
+              +e.col
+                +e.A.btn.btn.js-open-modal(href="#callback") Заказать

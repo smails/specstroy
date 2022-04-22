@@ -1,0 +1,168 @@
+.callback
+  padding: 6rem 0
+  position: relative
+  background: $c4
+  &__action
+    position: relative
+    background: #fff
+    box-shadow: 0px 64px 134px rgba(0, 0, 0, 0.1)
+    padding: 6rem
+    +screen('max', 1023)
+      padding: 6rem 4rem
+  &__title
+    max-width: 460px
+    font-weight: 700
+    +fs(40px)
+    line-height: 1.1
+    +screen('max', 1023)
+      +fs(30px)
+    span
+      color: $c2
+  &__info
+    display: flex
+    align-items: center
+    padding: 3rem 0
+    +screen('max', 575)
+      display: block
+  &__mail
+    +fs(18px)
+    display: inline-block
+    text-decoration: underline
+    padding-left: 20px
+    background-image: url(../icon/icon-mail.svg)
+    background-position: left center
+    background-repeat: no-repeat
+  &__phone
+    +fs(24px)
+    font-weight: 700
+    transition: .5s ease
+    &:hover
+      color: $c2
+  &__link-mess
+    position: absolute
+    display: flex
+    align-items: center
+    left: 0
+    bottom: 0
+  &__mess-icon
+    width: 20px
+    height: 20px
+  &__mess
+    margin-right: 0.5rem
+    display: inline-block
+  &__call
+    position: relative
+    padding-left: 80px
+    &:last-of-type
+      padding-left: 5rem
+      +screen('max', 575)
+        padding-left: 0
+        margin-top: 3rem
+  &__form
+    max-width: 720px
+    width: 70%
+    padding-top: 3rem
+    border-top: 1px solid rgba($c1, .1)
+    +screen('max', 1023)
+      width: 100%
+    .field
+      margin-bottom: 0
+  &__row
+    display: flex
+    +screen('max', 575)
+      display: block
+  &__submit
+    flex-shrink: 0
+    margin-left: 3rem
+    +fs(20px)
+    width: 280px
+    +screen('max', 575)
+      +fs(16px)
+      margin-top: 3rem
+      margin-left: 0
+      width: 100%
+  &__sign
+    +fs(13px)
+    margin-top: 2rem
+    color: #898989
+    a
+      text-decoration: underline
+  &__pic
+    position: absolute
+    right: 3%
+    bottom: 0
+    +screen('max', 1200)
+      height: 100%
+      right: 0
+    +screen('max', 1023)
+      display: none
+
+.callback-price
+  padding: 6rem 0
+  position: relative
+  background: $c3
+  &__action
+    position: relative
+    background: #fff
+    padding: 8rem
+    box-shadow: 0px 64px 134px rgba(0, 0, 0, 0.1)
+    +screen('max', 1023)
+      padding: 6rem
+  &__title
+    max-width: 460px
+    font-weight: 700
+    +fs(40px)
+    line-height: 1.1
+    +screen('max', 575)
+      +fs(30px)
+    span
+      color: $c2
+  &__box
+    padding-right: 8rem
+    border-right: 1px solid rgba($c1, .1)
+    max-width: 465px
+    box-sizing: border-box
+    +screen('max', 1023)
+      padding-right: 0
+      border-right: 0
+      max-width: 100%
+  &__submit
+    +fs(20px)
+    width: 100%
+    padding: 2rem
+  &__sign
+    +fs(13px)
+    margin-top: 2rem
+    color: #898989
+    a
+      text-decoration: underline
+  &__picture
+    position: absolute
+    right: 13%
+    bottom: 0
+    +screen('max', 1200)
+      right: 0
+      height: 100%
+    +screen('max', 1023)
+      display: none
+  &__subtitle
+    +fs(18px)
+    line-height: 1.3
+    margin: 1rem 0
+    +screen('max', 575)
+      margin: 2rem 0
+  &__txt
+    font-weight: 600
+    +fs(18px)
+    position: absolute
+    top: 16rem
+    right: -5rem
+    +screen('max', 1200)
+      display: none
+    span
+      display: block
+      font-weight: 400
+      font-size: 12px
+  &__pic
+    +screen('max', 1200)
+      height: 100%

@@ -1,0 +1,65 @@
+mixin banner(state)
+  if state == 'index'
+    +b.banner
+      +e.inner.inner
+        +e.P.sign От производителя
+        +e.H1.title Окрашенная имитация бруса для наружной отделки
+        +e.content
+          ul
+            li Финские краски
+            li Доставка по России 
+            li Свое производство
+            li Полная равномерная покраска 
+            li Изготовление от 3 дней
+            li Возможность покраски в любой цвет 
+        +e.A.btn.btn.js-open-modal(href="#callback") Оставить заявку
+  if state == 'prod'
+    +b.banner-page
+      +e.inner.inner
+        +b.breadcrumb(itemscope="" itemtype="http://schema.org/BreadcrumbList")
+          each link, index in ['Главная', 'Продукция']
+            if link == 'Продукция'
+              +e.SPAN.active(itemscope='', itemprop='itemListElement', itemtype='http://schema.org/ListItem')
+                +e.SPAN.text(itemprop='item', title=link , href="#")
+                  +e.SPAN(itemprop='name')=link
+                  meta(itemprop='position', content=index)
+            else
+              +e.SPAN.link(itemscope='', itemprop='itemListElement', itemtype='http://schema.org/ListItem')
+                +e.A.text(itemprop='item', title=link , href="#")
+                  +e.SPAN(itemprop='name')=link
+                  meta(itemprop='position', content=index)
+        +e.wrap
+          +e.content
+            +e.H1.title Каталог крашенных материалов на нашем производстве
+            +e.list
+              ul
+                li Материал всегда в наличии
+                li Свое производство
+                li Более 50 000 цветов
+            +e.A.btn.btn.js-open-modal(href="#callback") Получить бесплатный расчет
+          +e.IMG.pic(src='/images/prod-1.png' alt='')
+  if state == 'catalog'
+    +b.banner-page
+      +e.inner.inner
+        +b.breadcrumb(itemscope="" itemtype="http://schema.org/BreadcrumbList")
+          each link, index in ['Главная', 'Продукция']
+            if link == 'Продукция'
+              +e.SPAN.active(itemscope='', itemprop='itemListElement', itemtype='http://schema.org/ListItem')
+                +e.SPAN.text(itemprop='item', title=link , href="#")
+                  +e.SPAN(itemprop='name')=link
+                  meta(itemprop='position', content=index)
+            else
+              +e.SPAN.link(itemscope='', itemprop='itemListElement', itemtype='http://schema.org/ListItem')
+                +e.A.text(itemprop='item', title=link , href="#")
+                  +e.SPAN(itemprop='name')=link
+                  meta(itemprop='position', content=index)
+        +e.wrap
+          +e.content
+            +e.H1.title Покраска доски на нашем производстве
+            +e.list
+              ul
+                li Материал всегда в наличии
+                li Свое производство
+                li Более 50 000 цветов
+            +e.A.btn.btn.js-open-modal(href="#callback") Получить бесплатный расчет
+          +e.IMG.pic(src='/images/prod-1.png' alt='')

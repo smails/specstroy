@@ -1,0 +1,65 @@
+.btn
+  display: inline-block
+  padding: 1.7rem 4rem
+  color: #fff
+  background: $c2
+  border: 1px solid transparent
+  +fs(18px)
+  font-weight: 600
+  transition: .5s ease
+  box-sizing: border-box
+  text-align: center
+  +screen('max', 575)
+    +fs(16px)
+  &:hover
+    background: #fff
+    border-color: $c2
+    color: $c2
+  &_white
+    background: #fff
+    border-color: $c2
+    color: $c2
+    &:hover
+      color: #fff
+      background: $c2
+.swiper-btn
+  width: 60px
+  height: 60px
+  background: #fff
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: .5s ease
+  position: absolute
+  top: calc(50% - 45px)
+  z-index: 9
+  cursor: pointer
+  &_prev
+    left: -30px
+  &_next
+    right: -30px
+  svg
+    width: 9px
+    vertical-align: middle
+  path
+    fill: #7B7B7B
+    transition: .5s ease
+  &:hover
+    background: $c2
+    path
+      fill: #fff
+
+.swiper-container
+  padding-bottom: 40px
+.swiper-pagination
+  bottom: 0!important
+.swiper-pagination-bullet
+  width: 30px
+  border-radius: 0
+  height: 2px
+  background: #fff
+  opacity: 1
+  transition: .2s linear
+  &.swiper-pagination-bullet-active
+    width: 50px
+    background: $c2

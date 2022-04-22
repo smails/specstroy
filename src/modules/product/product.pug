@@ -1,0 +1,282 @@
+mixin product(state)
+  if state == 'index'
+    +b.product-index
+      +e.inner.inner
+        +e.H2.title
+          span Выберите 
+          | окрашенные материалы в нашем каталоге
+        +e.list
+          +e.A.box(href="#")
+            +e.picture
+              +e.IMG.pic(src='/images/product-1.png' alt='')
+              +e.hover_blue
+            +e.P.caption Имитация бруса
+          +e.A.box(href="#")
+            +e.picture
+              +e.IMG.pic(src='/images/product-2.png' alt='')
+              +e.hover_red
+            +e.P.caption Вагонка
+          +e.A.box(href="#")
+            +e.picture
+              +e.IMG.pic(src='/images/product-3.png' alt='')
+              +e.hover_green
+            +e.P.caption Брус
+          +e.A.box_half(href="#")
+            +e.picture
+              +e.IMG.pic(src='/images/product-4.png' alt='')
+              +e.hover_olive
+            +e.P.caption Скандинавская доска
+          +e.A.box_half(href="#")
+            +e.picture
+              +e.IMG.pic(src='/images/product-5.png' alt='')
+              +e.hover_purple
+            +e.P.caption Фасадная доска
+        +e.A.more.btn Посмотреть весь каталог
+        +e.A.calc.js-open-modal(href="#")
+          svg(fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44')
+            path(d='M16.92 0H3.38A3.39 3.39 0 0 0 0 3.38v13.54a3.39 3.39 0 0 0 3.38 3.39h13.54a3.39 3.39 0 0 0 3.39-3.39V3.38A3.39 3.39 0 0 0 16.92 0Zm-3.38 11.85H6.77a1.7 1.7 0 1 1 0-3.39h6.77a1.7 1.7 0 1 1 0 3.39ZM16.92 23.7H3.38A3.39 3.39 0 0 0 0 27.07v13.54A3.39 3.39 0 0 0 3.38 44h13.54a3.39 3.39 0 0 0 3.39-3.38V27.08a3.39 3.39 0 0 0-3.39-3.39Zm-2.19 12.33a1.7 1.7 0 1 1-2.39 2.4l-2.19-2.2-2.18 2.2a1.7 1.7 0 0 1-2.4-2.4l2.2-2.18-2.2-2.2a1.7 1.7 0 0 1 2.4-2.38l2.18 2.18 2.2-2.19c.42-.41 1.04-.57 1.62-.41a1.7 1.7 0 0 1 .76 2.8l-2.18 2.2 2.18 2.18ZM40.62 23.7H27.08a3.39 3.39 0 0 0-3.39 3.38v13.54A3.39 3.39 0 0 0 27.08 44h13.54A3.39 3.39 0 0 0 44 40.62V27.08a3.39 3.39 0 0 0-3.38-3.39Zm-3.39 13.53h-6.77a1.7 1.7 0 1 1 0-3.38h6.77a1.7 1.7 0 1 1 0 3.38Zm0-5.08h-6.77a1.7 1.7 0 1 1 0-3.38h6.77a1.7 1.7 0 1 1 0 3.38ZM40.62 0H27.08a3.39 3.39 0 0 0-3.39 3.38v13.54a3.39 3.39 0 0 0 3.39 3.39h13.54A3.39 3.39 0 0 0 44 16.92V3.38A3.39 3.39 0 0 0 40.62 0Zm-3.39 11.85h-1.7v1.69a1.7 1.7 0 1 1-3.38 0v-1.7h-1.69a1.7 1.7 0 1 1 0-3.38h1.7v-1.7a1.7 1.7 0 1 1 3.38 0v1.7h1.7a1.7 1.7 0 1 1 0 3.39Z' fill='#E30F16')
+  if state == 'prod'
+    +b.products
+      +e.inner.inner
+        +e.H2.title Каталог продукции
+        +e.list
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/images/prod-list-1.png' alt='')
+            +e.content
+              +e.P.caption Фасадная доска скандинавская
+              +e.info
+                +e.col
+                  +e.sign Размер:
+                  +e.P.val 2000/500/50
+                +e.col
+                  +e.sign Материал:
+                  +e.P.val Сосна
+              +e.price от 
+                span 950 
+                | руб
+              +e.A.btn.btn_white(href="/product.html") Подоробнее
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/images/prod-list-2.png' alt='')
+            +e.content
+              +e.P.caption Фасадная доска гладкая
+              +e.info
+                +e.col
+                  +e.sign Размер:
+                  +e.P.val 2000/500/50
+                +e.col
+                  +e.sign Материал:
+                  +e.P.val Сосна
+              +e.price от 
+                span 4500 
+                | руб
+              +e.A.btn.btn_white(href="/product.html") Подоробнее
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/images/prod-list-3.png' alt='')
+            +e.content
+              +e.P.caption Планкен из лиственницы
+              +e.info
+                +e.col
+                  +e.sign Размер:
+                  +e.P.val 2000/500/50
+                +e.col
+                  +e.sign Материал:
+                  +e.P.val Сосна
+              +e.price от 
+                span 4500 
+                | руб
+              +e.A.btn.btn_white(href="/product.html") Подоробнее
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/images/prod-list-4.png' alt='')
+            +e.content
+              +e.P.caption Лиственница сибирская
+              +e.info
+                +e.col
+                  +e.sign Размер:
+                  +e.P.val 2000/500/50
+                +e.col
+                  +e.sign Материал:
+                  +e.P.val Сосна
+              +e.price от 
+                span 4500 
+                | руб
+              +e.A.btn.btn_white(href="/product.html") Подоробнее
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/images/prod-list-5.png' alt='')
+            +e.content
+              +e.P.caption Имитация бруса
+              +e.info
+                +e.col
+                  +e.sign Размер:
+                  +e.P.val 2000/500/50
+                +e.col
+                  +e.sign Материал:
+                  +e.P.val Сосна
+              +e.price от 
+                span 950 
+                | руб
+              +e.A.btn.btn_white(href="/product.html") Подоробнее
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/images/prod-list-6.png' alt='')
+            +e.content
+              +e.P.caption Вагонка
+              +e.info
+                +e.col
+                  +e.sign Размер:
+                  +e.P.val 2000/500/50
+                +e.col
+                  +e.sign Материал:
+                  +e.P.val Сосна
+              +e.price от 
+                span 4500 
+                | руб
+              +e.A.btn.btn_white(href="/product.html") Подоробнее
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/images/prod-list-7.png' alt='')
+            +e.content
+              +e.P.caption Доска для террас
+              +e.info
+                +e.col
+                  +e.sign Размер:
+                  +e.P.val 2000/500/50
+                +e.col
+                  +e.sign Материал:
+                  +e.P.val Сосна
+              +e.price от 
+                span 4500 
+                | руб
+              +e.A.btn.btn_white(href="/product.html") Подоробнее
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/images/prod-list-8.png' alt='')
+            +e.content
+              +e.P.caption Доска половая
+              +e.info
+                +e.col
+                  +e.sign Размер:
+                  +e.P.val 2000/500/50
+                +e.col
+                  +e.sign Материал:
+                  +e.P.val Сосна
+              +e.price от 
+                span 4500 
+                | руб
+              +e.A.btn.btn_white(href="/product.html") Подоробнее
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/images/prod-list-9.png' alt='')
+            +e.content
+              +e.P.caption Фиброцементный сайдинг
+              +e.info
+                +e.col
+                  +e.sign Размер:
+                  +e.P.val 2000/500/50
+                +e.col
+                  +e.sign Материал:
+                  +e.P.val Сосна
+              +e.price от 
+                span 950 
+                | руб
+              +e.A.btn.btn_white(href="/product.html") Подоробнее
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/images/prod-list-10.png' alt='')
+            +e.content
+              +e.P.caption Интеръерная доска
+              +e.info
+                +e.col
+                  +e.sign Размер:
+                  +e.P.val 2000/500/50
+                +e.col
+                  +e.sign Материал:
+                  +e.P.val Сосна
+              +e.price от 
+                span 4500 
+                | руб
+              +e.A.btn.btn_white(href="/product.html") Подоробнее
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/images/prod-list-11.png' alt='')
+            +e.content
+              +e.P.caption Пиломатериал из сосны
+              +e.info
+                +e.col
+                  +e.sign Размер:
+                  +e.P.val 2000/500/50
+                +e.col
+                  +e.sign Материал:
+                  +e.P.val Сосна
+              +e.price от 
+                span 4500 
+                | руб
+              +e.A.btn.btn_white(href="/product.html") Подоробнее
+          +e.item
+            +b.consult
+              +e.info
+                +e.P.caption Не нашли то что нужно?
+                +e.P.text Получите бессплатную консультацию по подбору материала от нашего специалиста!
+                +e.A.call.js-open-modal(href="#callback") Получить консультацию
+  if state == 'single'
+    +b.product
+      +e.inner.inner
+        +b.breadcrumb(itemscope="" itemtype="http://schema.org/BreadcrumbList")
+          each link, index in ['Главная', 'Продукция']
+            if link == 'Продукция'
+              +e.SPAN.active(itemscope='', itemprop='itemListElement', itemtype='http://schema.org/ListItem')
+                +e.SPAN.text(itemprop='item', title=link , href="#")
+                  +e.SPAN(itemprop='name')=link
+                  meta(itemprop='position', content=index)
+            else
+              +e.SPAN.link(itemscope='', itemprop='itemListElement', itemtype='http://schema.org/ListItem')
+                +e.A.text(itemprop='item', title=link , href="#")
+                  +e.SPAN(itemprop='name')=link
+                  meta(itemprop='position', content=index)
+        +e.content
+          +e.gallery
+            .gallery-main
+              +e.IMG.pic-main(src='/images/gallety-1.jpg' alt='')
+            .gallery-nav
+              +e.IMG.pic-thumb(src='/images/gallety-1.jpg' alt='')
+              +e.IMG.pic-thumb(src='/images/case-1.png' alt='')
+              +e.IMG.pic-thumb(src='/images/case-2.png' alt='')
+              +e.IMG.pic-thumb(src='/images/gallety-1.jpg' alt='')
+              +e.IMG.pic-thumb(src='/images/case-1.png' alt='')
+              +e.IMG.pic-thumb(src='/images/case-2.png' alt='')
+          +e.info
+            +e.H1.title Окрашенная имитация бруса
+            +e.text Профиль, пользующийся большой популярностью. Этот материал может быть использован для наружных и внутренних работ.
+            +e.list
+              +e.item
+                +e.SPAN.sign Размер:
+                +e.SPAN.val 140/20/30
+              +e.item
+                +e.SPAN.sign Цвет:
+                +e.SPAN.val Любой
+              +e.item
+                +e.SPAN.sign Материал:
+                +e.SPAN.val Ель/Сосна
+              +e.item
+                +e.SPAN.sign Обработка:
+                +e.SPAN.val Гладкая
+              +e.item
+                +e.SPAN.sign Сорт:
+                +e.SPAN.val А/В/С
+            +e.control
+              +e.price Цена: от 
+                span 850 
+                | рублей за куб
+              +e.A.call.btn.js-open-modal(href="#callaback") Рассчитать стоимость
+            +e.vnt
+              +e.box
+                +e.IMG.i(src='/icon/icon-v-1.svg' alt='')
+                +e.SPAN.txt Срок выполнения от 3-х дней
+              +e.box
+                +e.IMG.i(src='/icon/icon-v-2.svg' alt='')
+                +e.SPAN.txt Доставка по всей России
+                  a(href="#") Подробнее

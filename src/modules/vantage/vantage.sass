@@ -1,0 +1,62 @@
+.vnt
+  background: $c4
+  padding: 6rem 0
+  +screen('max', 1200)
+    padding-bottom: 3rem
+  &_biege
+    background: $c3
+  &__title
+    margin-bottom: 6rem
+    +screen('max', 575)
+      max-width: 80%
+    span
+      color: $c2
+  &__list
+    display: flex
+    justify-content: space-between
+    +screen('max', 1200)
+      flex-wrap: wrap
+  &__item
+    margin-right: 4rem
+    +screen('max', 1200)
+      width: 44%
+      margin-bottom: 3rem
+    +screen('max', 575)
+      width: 100%
+      margin-right: 0
+    &:last-of-type
+      margin-right: 0
+      max-width: 255px
+      flex-shrink: 0
+      +screen('max', 1200)
+        max-width: 45%
+        margin-right: 4rem
+      +screen('max', 575)
+        max-width: 100%
+        margin-right: 0
+  &__picture
+    width: 80px
+    height: 80px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 4rem
+    background: $c2
+  &__pic
+    height: 42px
+    vertical-align: middle
+  &__caption
+    font-weight: 700
+    line-height: 1.2
+    +fs(24px)
+    height: 58px
+    margin-bottom: 1.5rem
+    +screen('max', 1200)
+      height: auto
+    br
+      +screen('max', 1200)
+        display: none
+  &__text
+    font-weight: 300
+    +fs(18px)
+    line-height: 1.6

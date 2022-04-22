@@ -1,0 +1,75 @@
+mixin step(state)
+  if state == 'index'
+    +b.step
+      +e.pictures
+        +e.IMG.pic_1(src='/images/work-1.jpg' alt='')
+        +e.IMG.pic_1(src='/images/work-3.jpg' alt='')
+        +e.IMG.pic_2(src='/images/work-2.jpg' alt='')
+      +e.info
+        +e.inner.inner
+          +e.top
+            +e.P.title
+              b Или 
+                span закажите покраску доски 
+                br
+                | на нашем производстве
+            +e.A.call.btn.js-open-modal(href="#callback") Заказать
+          +e.items
+            +e.item
+              +e.numb
+                +e.P.before Более
+                span(data-numb="150") 0
+                +e.P.sign видов краски
+              +e.P.txt Подходит для фасадных и наружных работ, для внутренней отделки, пола, потолка, бани, сауны
+            +e.item
+              +e.numb
+                +e.P.before Свыше
+                span(data-numb="50000") 0
+                +e.P.sign цветов
+              +e.P.txt Укрывные и лессирующие краски, матовые и глянцевые оттенки
+            +e.item
+              +e.numb
+                span(data-numb="17") 0
+                +e.P.sign Видов доски
+              +e.P.txt Разной ширины и профиля
+  if state == 'prod'
+    +b.step-table
+      +e.inner.inner
+        +e.H2.title Этапы работы
+        +e.list
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/icon/icon-step-1.svg' alt='')
+            +e.P.caption Оставьте заявку
+            +e.A.call.js-open-modal(href="#callback") Оставить заявку
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/icon/icon-step-2.svg' alt='')
+            +e.P.caption Наши специалист подбирает Вам подходящие решения
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/icon/icon-step-3.svg' alt='')
+            +e.P.caption Очистка доски, подготовка её к окрашиванию
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/icon/icon-step-4.svg' alt='')
+            +e.P.caption Окрашивание
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/icon/icon-step-5.svg' alt='')
+            +e.P.caption Сушка доски
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/icon/icon-step-6.svg' alt='')
+            +e.P.caption Доставка
+  +b.video
+    +e.inner.inner
+      +e.info
+        +e.P.numb 10%
+        +e.P.caption Скидка
+        +e.P.text Посмотрите ролик о нашей компании и узнайте как получить скидку 10% на первую покраску
+        +e.A.btn.btn(href="#" data-fancybox) Смотреть видео
+      +e.box
+        +e.play
+          +e.SVG.icon(fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 58')
+            path(d='M49.06 29 .23 57.2V.8L49.06 29Z' fill='#fff')

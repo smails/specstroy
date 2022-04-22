@@ -1,0 +1,61 @@
+mixin vantage(state)
+  if state == 'v1'
+    +b.vnt
+      +e.inner.inner
+        +e.H2.title Что 
+          span Вы получаете
+          |, работая с нами?
+        +e.list
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/icon/icon-vnt-1.svg' alt='')
+            +e.P.caption Цены от
+              br
+              | производителя
+            +e.text У нас собственное производство, покрасочный цех и склад. У нас нет затрат на перекупку материала и аренду оборудования.
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/icon/icon-vnt-2.svg' alt='')
+            +e.P.caption Финские краски
+            +e.text Краска используется для внутренних и наружных работ. Экологична и безопасна. Европейское качество и надежность подтверждено сертификатами.
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/icon/icon-vnt-3.svg' alt='')
+            +e.P.caption Более 50 000 цветов и 17 видов доски
+            +e.text Все цвета и профиль доски Краски: лессирующие, укрывные и др. Большой выбор цветов. Более 17 видов доски.
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/icon/icon-vnt-4.svg' alt='')
+            +e.P.caption Все работы
+              br
+              | под ключ
+            +e.text Материалы в наличии на складе. Приступаем к работе сразу после заключения договора.
+  if state == 'v2'
+    +b.vnt_biege
+      +e.inner.inner
+        +e.H2.title Наши преимущества
+        +e.list
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/icon/icon-vnt-1.svg' alt='')
+            +e.P.caption Полная равномерная 
+              br
+              |покраска дерева 
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/icon/icon-vnt-4.svg' alt='')
+            +e.P.caption Материал всегда
+              br
+              | в наличии
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/icon/icon-vnt-3.svg' alt='')
+            +e.P.caption Возможность покраски в 
+              br
+              | любой цвет (свеше 50 000 цветов)
+          +e.item
+            +e.picture
+              +e.IMG.pic(src='/icon/icon-vnt-5.svg' alt='')
+            +e.P.caption Срок выполнения 
+              br
+              | от 3-х дней

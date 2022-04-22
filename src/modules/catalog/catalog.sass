@@ -1,0 +1,116 @@
+.content
+  background: $c4
+  &__title
+    margin-bottom: 4rem
+    line-height: 1.1
+    span
+      color: $c2
+  &__subtitle
+    margin-top: -2.5rem
+    font-weight: 300
+    +fs(18px)
+    line-height: 1.6
+  &__contain
+    padding: 6rem 0
+    &_border
+      border-top: 1px solid rgba($c1, .1)
+  &__list
+    display: grid
+    grid-template-columns: repeat(3, 31.5%)
+    margin-top: 4rem
+    justify-content: space-between
+    +screen('max', 575)
+      display: block
+  &__picture
+    height: 360px
+    border: 3px solid #FFFFFF
+    box-sizing: border-box
+    box-shadow: 0px 10px 40px rgba(38, 38, 38, 0.05), 0px 2px 4px rgba(38, 38, 38, 0.02), 0px 10px 40px rgba(38, 38, 38, 0.05), 0px 2px 4px rgba(38, 38, 38, 0.02)
+    margin-bottom: 3rem
+    +screen('max', 1200)
+      height: 300px
+  &__item
+    +screen('max', 575)
+      margin-bottom: 3rem
+  &__pic
+    vertical-align: middle
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__caption
+    font-weight: 700
+    +fs(24px)
+    line-height: 1.3
+  &__step
+    font-weight: 700
+    color: $c2
+    margin-bottom: 0.5rem
+  &__table
+    background: #FFFFFF
+    box-shadow: 0px 64px 134px rgba(0, 0, 0, 0.1)
+    padding: 4rem
+    box-sizing: border-box
+    margin-bottom: 6rem
+    +screen('max', 1023)
+      padding: 3rem
+  &__head,&__row
+    display: flex
+    justify-content: space-between
+    padding-bottom: 1.5rem
+    border-bottom: 1px solid rgba($c1, .1)
+  &__head
+    +screen('max', 575)
+      display: none
+  &__row
+    padding: 1rem 0
+    align-items: center
+    +screen('max', 575)
+      flex-wrap: wrap
+      padding: 2rem 0
+  &__col
+    box-sizing: border-box
+    &:first-of-type
+      width: 5%
+    &:nth-of-type(2)
+      flex-grow: 1
+      width: 25%
+      +screen('max', 575)
+        width: 95%
+    &:nth-of-type(3), &:nth-of-type(4)
+      width: 25%
+      +screen('max', 575)
+        width: 50%
+        margin-top: 2rem
+        padding-left: 5%
+    &:last-of-type
+      width: 140px
+      +screen('max', 575)
+        width: 100%
+        margin-top: 2rem
+        padding-left: 5%
+    &:before
+      +screen('max', 575)
+        content: attr(data-title)
+        font-weight: 700
+        +fs(12px)
+        padding-bottom: 1rem
+        display: inline-block
+  &__val
+    +fs(20px)
+    +screen('max', 1200)
+      +fs(18px)
+  &__price
+    font-weight: 600
+    span
+      +fs(24px)
+      +screen('max', 1200)
+        +fs(18px)
+  &__txt
+    span
+      color: $c2
+    +screen('max', 1023)
+      padding-right: 2rem
+      display: inline-block
+  &__btn
+    +screen('max', 575)
+      width: 100%

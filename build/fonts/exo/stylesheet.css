@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Exo 2.0 Extra';
+    src: url('Exo20-ExtraBold.woff2') format('woff2'),
+        url('Exo20-ExtraBold.woff') format('woff'),
+        url('Exo20-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

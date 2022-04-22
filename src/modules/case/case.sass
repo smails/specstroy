@@ -1,0 +1,51 @@
+.case
+  padding: 6rem 0
+  background: $c3
+  overflow: hidden
+  &__head
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 4rem
+  &__title
+    span
+      color: $c2
+  &__control
+    display: flex
+    justify-content: space-between
+    width: 140px
+    +screen('max', 575)
+      display: none
+    .swiper-btn
+      position: inherit
+  &__pic
+    width: 100%
+    height: 460px
+    object-fit: cover
+    vertical-align: middle
+    +screen('max', 1023)
+      height: 300px
+  &__content
+    padding: 3rem
+    box-sizing: border-box
+    background: #fff
+    li
+      padding-left: 20px
+      position: relative
+      margin-bottom: 15px
+      &:before
+        content: ''
+        width: 14px
+        height: 9px
+        background: url(../icon/icon-check.svg) no-repeat center/contain
+        position: absolute
+        left: 0
+        top: 2px
+  &__caption
+    font-weight: 700
+    line-height: 1.2
+    +fs(24px)
+    margin-bottom: 15px
+  .swiper-container
+    overflow: initial
+    padding-bottom: 0

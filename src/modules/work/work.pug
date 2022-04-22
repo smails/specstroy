@@ -1,0 +1,81 @@
+mixin work(state)
+  if state == 'work'
+    +b.work
+      +e.inner.inner
+        +e.H2.title Почему 
+          span нужно окрашивать
+          br
+          | на производстве?
+        +e.slider
+          .swiper-container
+            .swiper-wrapper
+              +e.slide.swiper-slide
+                +e.box
+                  +e.IMG.pic(src='/images/work-before.jpg' alt='')
+                  +e.content
+                    +e.P.caption Покраска на нашем производстве
+                    +e.P.sign Качественная покраска
+                +e.box
+                  +e.IMG.pic(src='/images/work-after.jpg' alt='')
+                  +e.content
+                    +e.P.caption Самостоятельная покраска
+                    +e.P.sign Некачественная покраска
+              +e.slide.swiper-slide
+                +e.box
+                  +e.IMG.pic(src='/images/work-before.jpg' alt='')
+                  +e.content
+                    +e.P.caption Покраска на нашем производстве
+                    +e.P.sign Качественная покраска
+                +e.box
+                  +e.IMG.pic(src='/images/work-after.jpg' alt='')
+                  +e.content
+                    +e.P.caption Самостоятельная покраска
+                    +e.P.sign Некачественная покраска
+              +e.slide.swiper-slide
+                +e.box
+                  +e.IMG.pic(src='/images/work-before.jpg' alt='')
+                  +e.content
+                    +e.P.caption Покраска на нашем производстве
+                    +e.P.sign Качественная покраска
+                +e.box
+                  +e.IMG.pic(src='/images/work-after.jpg' alt='')
+                  +e.content
+                    +e.P.caption Самостоятельная покраска
+                    +e.P.sign Некачественная покраска
+            +b.swiper-pagination
+          +b.swiper-btn_prev
+            svg(fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 14')
+              path(fill-rule='evenodd' clip-rule='evenodd' d='m1.5 8.4 6 5.6L9 12.6 3 7l6-5.6L7.5 0 0 7l1.5-1.4L3 7 1.5 8.4Z')
+              path(d='M1.5 5.6 0 7l1.5 1.4L3 7 1.5 5.6Z' )
+          +b.swiper-btn_next
+            svg(width='9' height='14' viewBox='0 0 9 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(fill-rule='evenodd' clip-rule='evenodd' d='M7.50003 5.60002L1.5 -6.55671e-07L1.10153e-06 1.4L6.00003 7.00001L3.15936e-05 12.6L1.50003 14L9 6.99999L7.5 8.39998L6.00003 7.00001L7.50003 5.60002Z')
+              path(d='M7.5 8.39998L9 6.99999L7.50003 5.60002L6.00003 7.00001L7.5 8.39998Z')
+  if state == 'workshop'
+    +b.workshop
+      +e.inner
+        +e.H2.title.text-center
+          span Собственный 
+          | покрасочный цех
+        +e.P.sign.text-center Контроль качества на производстве позволяет гарантировать высокое качество и долговечность продукции гарантирует высокое качество продукции.
+        .swiper-container
+          .swiper-wrapper
+            +e.slide.swiper-slide
+              +e.IMG.pic(src='/images/workshop-1.jpg' alt='')
+            +e.slide.swiper-slide
+              +e.IMG.pic(src='/images/workshop-2.jpg' alt='')
+            +e.slide.swiper-slide
+              +e.IMG.pic(src='/images/workshop-3.jpg' alt='')
+            +e.slide.swiper-slide
+              +e.IMG.pic(src='/images/workshop-4.jpg' alt='')
+            +e.slide.swiper-slide
+              +e.IMG.pic(src='/images/workshop-5.jpg' alt='')
+          +b.swiper-pagination
+          +b.swiper-btn_prev
+            svg(fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 14')
+              path(fill-rule='evenodd' clip-rule='evenodd' d='m1.5 8.4 6 5.6L9 12.6 3 7l6-5.6L7.5 0 0 7l1.5-1.4L3 7 1.5 8.4Z')
+              path(d='M1.5 5.6 0 7l1.5 1.4L3 7 1.5 5.6Z' )
+          +b.swiper-btn_next
+            svg(width='9' height='14' viewBox='0 0 9 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(fill-rule='evenodd' clip-rule='evenodd' d='M7.50003 5.60002L1.5 -6.55671e-07L1.10153e-06 1.4L6.00003 7.00001L3.15936e-05 12.6L1.50003 14L9 6.99999L7.5 8.39998L6.00003 7.00001L7.50003 5.60002Z')
+              path(d='M7.5 8.39998L9 6.99999L7.50003 5.60002L6.00003 7.00001L7.5 8.39998Z')

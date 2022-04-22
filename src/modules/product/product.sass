@@ -1,0 +1,351 @@
+.product-index
+  padding: 6rem 0
+  background: $c4
+  position: relative
+  &__title
+    max-width: 595px
+    margin-bottom: 4rem
+    span
+      color: $c2
+  &__list
+    display: flex
+    flex-wrap: wrap
+    border: 1px solid #EDEDED
+  &__box
+    width: 33.33%
+    box-sizing: border-box
+    background: #FFFFFF
+    border: 1px solid #EDEDED
+    transition: .5s ease
+    position: relative
+    +screen('max', 575)
+      display: block
+      width: 50%
+    &:hover
+      box-shadow: 0px 64px 134px rgba(0, 0, 0, 0.1)
+      z-index: 3
+      .product-index__hover
+        opacity: 1
+    &_half
+      width: 50%
+      &:last-of-type
+        +screen('max', 575)
+          width: 100%
+  &__picture
+    width: 100%
+    height: 244px
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: .5s ease
+    position: relative
+    +screen('max', 1023)
+      height: 205px
+      box-sizing: border-box
+      padding: 1rem
+    +screen('max', 575)
+      height: 150px
+      padding: 2rem
+  &__pic
+    max-width: 100%
+    +screen('max', 575)
+      max-height: 100%
+  &__hover
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    mix-blend-mode: color
+    transition: .5s ease
+    opacity: 0
+    &_blue
+      background: #0F7DE3
+    &_red
+      background: #E30F0F
+    &_green
+      background: #659B64
+    &_olive
+      background: #9A9B64
+    &_purple
+      background: #72649B
+  &__caption
+    +fs(24px)
+    font-weight: 700
+    margin: 0 3rem 3rem
+    +screen('max', 575)
+      +fs(18px)
+  &__more
+    margin-top: 4rem
+    +fs(20px)
+    width: 335px
+    padding: 2rem 4rem
+    +screen('max', 575)
+      width: 100%
+      +fs(16px)
+  &__calc
+    position: absolute
+    width: 100px
+    height: 100px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 100%
+    border: 5px solid #EDEDED
+    box-shadow: 0px 10px 40px rgba(38, 38, 38, 0.05), 0px 2px 4px rgba(38, 38, 38, 0.02), 0px 10px 40px rgba(38, 38, 38, 0.05), 0px 2px 4px rgba(38, 38, 38, 0.02)
+    background: #fff
+    position: absolute
+    right: 5%
+    bottom: 50%
+    transform: translate(-50%, 50%)
+    +screen('max', 1600)
+      transform: translate(0%, 50%)
+      right: 0
+    +screen('max', 1200)
+      bottom: 90%
+    +screen('max', 575)
+      width: 50px
+      height: 50px
+      bottom: 83%
+    svg
+      width: 44px
+      vertical-align: middle
+      +screen('max', 575)
+        width: 25px
+
+.products
+  padding: 6rem 0
+  background: $c4
+  &__title
+    margin-bottom: 4rem
+  &__list
+    display: grid
+    grid-template-columns: repeat(4, 25%)
+    border: 1px solid #EDEDED
+    +screen('max', 1200)
+      grid-template-columns: repeat(3, 33%)
+    +screen('max', 1023)
+      grid-template-columns: repeat(2, 50%)
+    +screen('max', 575)
+      grid-template-columns: repeat(1, 100%)
+  &__item
+    background: #FFFFFF
+    border: 1px solid #EDEDED
+  &__picture
+    width: 100%
+    height: 240px
+  &__pic
+    width: 100%
+    height: 100%
+    object-fit: cover
+    vertical-align: middle
+  &__content
+    padding: 1.5rem 3rem 3rem
+  &__caption
+    +fs(24px)
+    font-weight: 700
+    line-height: 1.2
+    margin-bottom: 1.5rem
+    max-width: 70%
+    height: 58px
+  &__info
+    display: flex
+    margin-bottom: 1.5rem
+  &__col
+    margin-right: 3rem
+  &__sign
+    font-weight: 600
+    color: #898989
+    +fs(12px)
+    margin-bottom: .5rem
+  &__val
+    font-weight: 600
+  &__price
+    font-weight: 700
+    margin-bottom: 2rem
+    span
+      +fs(24px)
+  &__btn
+    width: 100%
+    +fs(20px)
+    padding: 2rem
+    +screen('max', 575)
+      +fs(16px)
+
+.consult
+  width: 100%
+  height: 100%
+  background: #F2EADE
+  display: flex
+  justify-content: center
+  align-items: center
+  +screen('max', 575)
+    margin: 5rem 0
+  &__info
+    width: calc(100% - 6rem)
+    background: #F2EADE
+    border: 1px solid #E30F16
+    box-sizing: border-box
+    box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.05), 0px 8px 8px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 32px 32px rgba(0, 0, 0, 0.05), 0px 2px 2px rgba(0, 0, 0, 0.05), 0px 1px 1px rgba(0, 0, 0, 0.05)
+    padding: 4.5rem 3rem 3.5rem
+  &__caption
+    font-weight: 700
+    +fs(40px)
+    line-height: 1.1
+    margin-bottom: 2rem
+    +screen('max', 575)
+      +fs(25px)
+  &__text
+    line-height: 1.5
+  &__call
+    +fs(14px)
+    color: $c2
+    font-weight: 700
+    border-top: 1px solid $c2
+    border-bottom: 1px solid $c2
+    padding: 2rem 0
+    display: block
+    margin-top: 2rem
+    &::after
+      content: ''
+      width: 15px
+      height: 10px
+      background: url(../icon/icon-arrow-right.svg) no-repeat center/contain
+      display: inline-block
+      margin-left: 0.5rem
+      margin-bottom: 0
+
+.product
+  padding: 22rem 0 6rem
+  position: relative
+  +screen('max', 1023)
+    padding: 13rem 0 6rem
+  +screen('max', 1023)
+    padding-top: 23rem
+  &:before
+    content: ''
+    background: $c3
+    width: 100%
+    height: 250px
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    +screen('max', 1023)
+      height: 165px
+    +screen('max', 1023)
+      height: 145px
+  &__content
+    margin-top: 6rem
+    display: flex
+    justify-content: space-between
+    +screen('max', 1023)
+      display: block
+  &__gallery
+    max-width: 500px
+    width: 45%
+    margin-right: 5%
+    flex-shrink: 0
+    +screen('max', 1023)
+      margin-right: 0
+      width: 100%
+      margin-bottom: 3rem
+    .gallery-main
+      width: 100%
+      margin-bottom: 1rem
+    .gallery-nav
+      display: grid
+      grid-template-columns: repeat(4, 23.5%)
+      grid-gap: 10px
+      +screen('max', 1023)
+        grid-template-columns: repeat(4, 22.5%)
+      +screen('max', 575)
+        grid-template-columns: repeat(4, 23%)
+  &__pic-main
+    width: 100%
+    height: 400px
+    object-fit: cover
+    vertical-align: middle
+    +screen('max', 1023)
+      height: 300px
+  &__pic-thumb
+    width: 100%
+    height: 80px
+    object-fit: cover
+  &__title
+    margin-bottom: 2.5rem
+  &__text
+    +fs(18px)
+    font-weight: 300
+    line-height: 1.4
+    margin-bottom: 2.5rem
+    +screen('max', 1023)
+      +fs(16px)
+  &__list
+    display: flex
+    max-width: 400px
+    flex-wrap: wrap
+  &__item
+    margin-right: 1rem
+    margin-bottom: 2rem
+    width: 48%
+    display: flex
+    align-items: flex-end
+    &:nth-of-type(2n)
+      margin-right: 0
+  &__sign
+    +fs(14px)
+    color: #696969
+    width: 65px
+    margin-right: 1.5rem
+    flex-shrink: 0
+  &__val
+    +fs(18px)
+  &__control
+    margin-top: 3rem
+    padding: 3rem 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-top: 1px solid rgba($c1, .1)
+    border-bottom: 1px solid rgba($c1, .1)
+    +screen('max', 1023)
+      display: block
+  &__price
+    font-weight: 700
+    span
+      +fs(80px)
+  &__call
+    width: 300px
+    +fs(20px)
+    padding: 2rem
+    +screen('max', 1023)
+      width: 100%
+      margin-top: 2rem
+    +screen('max', 1023)
+      +fs(16px)
+  &__vnt
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 2rem
+    +screen('max', 1023)
+      display: block
+  &__box
+    display: flex
+    align-items: center
+    margin-right: 2rem
+    +screen('max', 1023)
+      margin-right: 0
+      margin-top: 2rem
+  &__i
+    margin-right: 1.5rem
+    vertical-align: middle
+  &__txt
+    font-weight: 600
+    a
+      color: $c2
+      text-decoration: underline
+      +fs(12px)
+      display: inline-block
+      margin-left: 1rem

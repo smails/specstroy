@@ -1,0 +1,17 @@
+include ../static/pug/global
+<!DOCTYPE html>
+html
+  +head('Каталог')
+  body.index
+    +header()
+    +banner('prod')
+    +product('prod')
+    +step()
+    +work('workshop')
+    +vantage('v1')
+    +review()
+    +faq()
+    +case()
+    +callback('v1')
+    +footer()
+    include ../static/pug/_scripts

@@ -1,0 +1,97 @@
+.banner
+  background: url(/images/banner.jpg) no-repeat left/cover
+  padding: 27rem 0 20rem
+  +screen('max', 1023)
+    padding: 16rem 0 10rem
+  +screen('max', 575)
+    padding: 30rem 0 10rem
+  &__sign
+    display: inline-block
+    padding: 10px 0 10px 30px
+    background-image: url(../icon/icon-work.svg)
+    background-position: left center
+    background-repeat: no-repeat
+    text-transform: uppercase
+    color: $c2
+    font-weight: 700
+  &__title
+    max-width: 590px
+    margin-bottom: 4rem
+  &__content
+    ul
+      display: grid
+      grid-template-columns: 1fr 1fr
+      max-width: 550px
+    li
+      padding-left: 20px
+      position: relative
+      margin-bottom: 15px
+      &:before
+        content: ''
+        width: 14px
+        height: 9px
+        background: url(../icon/icon-check.svg) no-repeat center/contain
+        position: absolute
+        left: 0
+        top: 2px
+  &__btn
+    margin-top: 4rem
+    +fs(20px)
+    width: 280px
+    padding: 2rem 4rem
+    +screen('max', 575)
+      +fs(16px)
+
+.banner-page
+  padding: 22rem 0 5rem
+  background: $c3
+  +screen('max', 1023)
+    padding: 13rem 0 5rem
+  +screen('max', 575)
+    padding-top: 23rem
+  &__wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 1.5rem
+    +screen('max', 1023)
+      flex-wrap: wrap-reverse
+    +screen('max', 575)
+      margin-top: 3rem
+  &__content
+    max-width: 460px
+    +screen('max', 1023)
+      max-width: 100%
+  &__title
+    margin-bottom: 4rem
+  &__list
+    margin-bottom: 4rem
+    ul
+      display: grid
+      grid-template-columns: repeat(3, 30%)
+      justify-content: space-between
+    li
+      padding-left: 20px
+      position: relative
+      margin-bottom: 15px
+      &:before
+        content: ''
+        width: 14px
+        height: 9px
+        background: url(../icon/icon-check.svg) no-repeat center/contain
+        position: absolute
+        left: 0
+        top: 2px
+  &__btn
+    width: 360px
+    padding: 2rem 4rem
+    +fs(20px)
+    +screen('max', 575)
+      +fs(16px)
+      width: 100%
+  &__pic
+    max-width: 60%
+    +screen('max', 1200)
+      max-width: 45%
+    +screen('max', 1023)
+      max-width: 100%
